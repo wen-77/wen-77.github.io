@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 動畫 -->
+    <!-- <link rel="stylesheet" href="./css/animation.css"> -->
+    <!-- 字型 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow+Condensed&family=Noto+Sans+TC:wght@300;400&family=Ubuntu:wght@400;500&display=swap">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page">
+        <!-- 手機版Menu -->
+        <p id="mobile-menu">&#9776;</p>
+        <aside id="aside">
+            <p id="closeBtn">&times;</p>
+            <div>
+                <div class="author-img"></div>
+                <h1 class="font02"><a href="./index.html">Wendy Hu</a></h1>
+                <span class="author-description font03">為成為Fornt-End而努力學習中</span>
+            </div>
+            <nav class="font03" id="navbar">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Skills">Skill</a>
+                <a href="#Education">Education</a>
+                <a href="#Experience">Experience</a>
+                <a href="#Work">Work</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+            <span class="copyright font04">Copyright
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> All rights reserved.</span>
+        </aside>
+        <div class="content" id="content">
+            <!-- Home -->
+            <div class="home section" id="Home">
+                <img src="./images/banner_02.jpg">
+            </div>
+            <!-- About -->
+            <section id="About" class="section">
+                <h4 class="font02">About Me</h4>
+                <p>
+                    <em>還 </em>
+                    記得第一次接觸前端是大二的課堂上，只學了簡單的html與css，並與同學們一起製作出一個牙醫診所
+                    的介紹網站，當時學藝不精的我們，為了美觀好看，簡單暴力的把很多可以用程式呈現的地方，都用圖片來代替，
+                    即使如此，負責coding的我，在完成的時候還是覺得很有成就感，也讓我的人生規劃多了一個選項。
+                </p>
+                <p>
+                    <em>大 </em>
+                    三在尋找實習的時候，我很認真地開始思考自己未來的出路，希望能夠藉由實習，更加明確了解自己的目標，
+                    殊不知，前方正有一座名為Javascript的迷宮，等著我通關。其中記憶最深刻的，莫過於表單驗證了，我耗時了三天才完成它，也導致我至今仍記憶猶新啊！
+                </p>
+                <p>
+                    <em>出 </em>
+                    了社會後，日復一日的做著一樣的工作，使我開始思考，難道前端就只能做到切切版、套套效果而已，
+                    若是如此，為何還有這麼多人趨之若鶩？後來上了網路課程才知道，原來我才是那井底之蛙，之前所學的不過是皮毛中的皮毛，
+                    前端能做的事多著呢！雖然一時半會學不完，但也讓我大開眼見，更是對於前端技術深深著迷。
+                </p>
+            </section>
+            <!-- Skill -->
+            <section id="Skills" class="fadeInDown section">
+                <h1 class="font02">My Skills</h1>
+                <div class="font04">
+                    <div class="skills-box">
+                        <div class="skill-box fadeInLeft">
+                            <p>Photoshop</p>
+                            <div>
+                                <div class="skill ps">80%</div>
+                            </div>
+                        </div>
+                        <div class="skill-box fadeInRight">
+                            <p>Illustrator</p>
+                            <div>
+                                <div class="skill ai">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skill-box fadeInLeft">
+                            <p>HTML</p>
+                            <div>
+                                <div class="skill html">90%</div>
+                            </div>
+                        </div>
+                        <div class="skill-box fadeInRight">
+                            <p>CSS</p>
+                            <div>
+                                <div class="skill css">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skill-box fadeInLeft">
+                            <p>JavaScript</p>
+                            <div>
+                                <div class="skill js">65%</div>
+                            </div>
+                        </div>
+                        <div class="skill-box fadeInRight">
+                            <p>jQuery</p>
+                            <div>
+                                <div class="skill jq">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skill-box fadeInLeft">
+                            <p>Vue</p>
+                            <div>
+                                <div class="skill vue">60%</div>
+                            </div>
+                        </div>
+                        <div class="skill-box fadeInRight">
+                            <p>SEO</p>
+                            <div>
+                                <div class="skill seo">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Education -->
+            <section id="Education" class="fadeInLeft section">
+                <h2 class="font02">Education</h2>
+                <div class="accordion font01">
+                    <div>
+                        <button class="accordion-title font01">
+                            私立元智大學
+                        </button>
+                        <div class="accordion-body">
+                            <p>就讀資訊傳播學系，學習平面設計、動畫製作、紀錄片拍攝、互動設計及網頁程式設計等等。<br>
+                                多元且跨領域的學習，學習期間需經常組成團隊，並分工合作做出成品。
+                            </p>
+                            <strong>課外之餘</strong>
+                            <ul>
+                                <li>大一至大四參與系排，參加校內校外比賽，並協助舉辦校友活動。</li>
+                                <li>大二時參與宿營活動，擔任活動組工作人員。</li>
+                                <li>大三暑假到科技公司實習，擔任前端實習生。</li>
+                                <li>大四時畢業展覽，擔任場務組工作人員。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="accordion-title font01">
+                            市立內湖高中
+                        </button>
+                        <div class="accordion-body">
+                            <ul>
+                                <li>高二時當任吉他社美宣</li>
+                                <li>高一時參與吉他社與合唱團</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Experience -->
+            <section id="Experience" class="section">
+                <h2 class="font02">Work Experience</h2>
+                <div class="timeline">
+                    <div>
+                        <p class="font01">網頁設計師&emsp;<span class="font04">2018/08 ~ NOW</span></p>
+                        <ol>
+                            <li>網站開發：與設計師、後端工程師合作，負責切版與RWD網頁製作。</li>
+                            <li>網站維護：現有網站內容更新、修改及改版。</li>
+                            <li>平面設計：少許平面文宣設計製作。</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div>
+                        <p class="font01">前端實習生&emsp;<span class="font04">2018/08 ~ NOW</span></p>
+                        <p>
+                            【公司企業形象官網】製作：依據設計稿切版，並與後端工程師配合完成。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Work -->
+            <section id="Work" class="section">
+                <h2 class="font02">Recent Work</h2>
+                <!-- 製作中 -->
+                <h2 style="text-align: center;">施工中</h2>
+                <div class="loader"></div>
+                <!-- 篩選按鈕 -->
+                <!-- 內容 -->
+                <!-- <div class="works font04">
+                    <div class="con">
+                        <img src="">
+                        <div class="overlay">
+                            <h4>work1</h4>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <img src="">
+                        <div class="overlay">
+                            <h4>work1</h4>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <img src="">
+                        <div class="overlay">
+                            <h4>work1</h4>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <img src="">
+                        <div class="overlay">
+                            <h4>work1</h4>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+            <!-- Contact -->
+            <section id="Contact" class="section">
+                <h2 class="font02">Contact</h2>
+                <form id="form">
+                    <div class="field">
+                        <label for="name">姓名</label>
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">信箱</label>
+                        <input type="text" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="field">
+                        <label for="subject">主旨</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">訊息</label>
+                        <textarea type="text" name="message" id="message" placeholder="Say Something..." rows="5"
+                            required></textarea>
+                    </div>
+                    <div class="field-button">
+                        <input type="submit" id="button" value="Send Email">
+                        <input type="reset" id="button" value="Reset">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        emailjs.init('user_zfnwO72cyisitmyPURm0S')
+    </script>
+
+</body>
+
+</html>

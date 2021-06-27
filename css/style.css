@@ -1,0 +1,471 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', "微軟正黑體", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #3f3e3e;
+    text-decoration: none;
+}
+
+/* 中文字型 */
+.font01 {
+    font-family: 'Noto Sans TC', "微軟正黑體", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* 名字 */
+/* 大標 */
+.font02 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* 左選單 */
+.font03 {
+    font-family: 'Barlow Condensed', monospace, sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+/* 內文 */
+.font04 {
+    letter-spacing: 1px;
+    font-family: 'Abel';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.page {
+    width: 80%;
+    margin: 0 10%;
+    display: inline-flex;
+}
+
+/* 左邊 */
+aside {
+    background-color: #F2F3F7;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    min-width: 300px;
+    display: block;
+    z-index: 999;
+}
+
+.author-img {
+    background-image: url(../images/banner_01.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 5% auto;
+}
+
+.author-description {
+    font-size: 13px;
+    color: #555353;
+    letter-spacing: 1.2px;
+}
+
+/* 手機版選單 */
+#mobile-menu,
+#closeBtn {
+    display: none;
+    z-index: 999;
+}
+
+.open {
+    display: block;
+}
+
+/* 選單 */
+nav {
+    margin: 8% 0;
+}
+
+nav a {
+    display: block;
+    line-height: 2.5;
+    text-decoration: none;
+}
+
+/* Scrollspy */
+#navbar a.active {
+    color: #d11a1acc;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #6b6b6b;
+}
+
+/* 右邊 */
+.content {
+    width: 80%;
+    margin-left: 300px;
+}
+
+section {
+    padding: 5% 4%;
+    margin: 5% 0;
+}
+
+/* Home */
+.home {
+    height: 600px;
+    overflow: hidden;
+}
+
+/* About */
+#About p::first-letter {
+    font-size: 1.5rem;
+}
+
+#About p {
+    text-indent: 2rem;
+    font-weight: 300;
+}
+
+/* Skill */
+.skills-box {
+    width: 100%;
+    display: inline-flex;
+}
+
+.skill-box {
+    width: 100%;
+}
+
+.skill {
+    text-align: right;
+    padding: 1px 2px;
+    color: white;
+    border-radius: 25px;
+}
+
+.ps {
+    width: 80%;
+    background-color: #ec5453;
+}
+
+.ai {
+    width: 85%;
+    background-color: rgb(233, 139, 52);
+}
+
+.html {
+    width: 90%;
+    background-color: #f9bf3f;
+}
+
+.css {
+    width: 85%;
+    background-color: rgb(65, 218, 65);
+}
+
+.js {
+    width: 65%;
+    background-color: #2c98f0;
+}
+
+.jq {
+    width: 70%;
+    background-color: #4054b2;
+}
+
+.vue {
+    width: 60%;
+    background-color: #a84cb8;
+}
+
+.seo {
+    width: 75%;
+    background-color: #2fa499;
+}
+
+/* Education */
+.accordion-title {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    align-items: center;
+}
+
+.accordion-body {
+    padding-left: 40px;
+    display: none;
+}
+
+.accordion.active {
+    background-color: #efefef;
+}
+
+.accordion-title:hover {
+    background-color: #ccc;
+}
+
+.accordion-title:after {
+    content: '＋';
+    float: right;
+    margin-left: 5px;
+    border: none;
+}
+
+.accordion.active:after {
+    content: "－";
+}
+
+/* work experience */
+.timeline {
+    position: relative;
+    padding: 2% 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 5px #ec5453 solid;
+    background-color: #ffffff;
+    z-index: 5;
+    top: 32px;
+    left: 1.5%;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #dbd8d8;
+    top: 0;
+    bottom: 0;
+    left: 3%;
+    margin-left: -3px;
+}
+
+.timeline div {
+    width: 86%;
+    background-color: #efefef;
+    border-radius: 10px;
+    padding: 1% 3%;
+    position: relative;
+    left: 8%;
+}
+
+.timeline div span {
+    font-size: 16px;
+    color: #6b6b6b;
+}
+
+.timeline div ol {
+    padding-left: 4%;
+}
+
+.timeline div::before {
+    content: "";
+    left: -6%;
+    top: 5%;
+    border-width: 25px;
+    border-style: solid;
+    border-color: transparent #efefef transparent transparent;
+    position: absolute;
+}
+
+/* Works */
+/* 製作中 */
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*  */
+.works {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.con {
+    width: 40%;
+    height: 250px;
+    overflow: hidden;
+    padding: 1% 1rem;
+    margin: 1% 0;
+    border: #f9bf3f 3px solid;
+    cursor: pointer;
+    position: relative;
+}
+
+.overlay {
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    position: absolute;
+    background-color: #f9bf3f;
+}
+
+.con:hover .overlay {
+    bottom: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Contact */
+#form {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.field {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.field label {
+    display: block;
+    color: #555353;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    display: block;
+    line-height: 3;
+    font-size: 16px;
+    border: none;
+    padding: 0 10px;
+    background-color: #d8d8d860;
+}
+
+.field-button {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: block;
+    padding: 6px 20px;
+    font-size: 18px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+}
+
+@media only screen and (max-width: 1200px) {
+    .page {
+        width: 100%;
+        margin: 0;
+    }
+
+    aside {
+        min-width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    aside {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+        color: #ec5453;
+        font-size: 45px;
+        font-weight: bold;
+        padding: 0 0 0 1.5%;
+        margin-top: 1%;
+        position: fixed;
+        cursor: pointer;
+    }
+
+    #closeBtn {
+        display: block;
+        color: #555353;
+        font-size: 45px;
+        font-weight: bold;
+        padding: 0 0 0 1.5%;
+        margin-top: 1%;
+        position: fixed;
+        left: 220px;
+        cursor: pointer;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 660px) {
+    .home {
+        height: 350px;
+    }
+
+    .skills-box,
+    .works {
+        display: block;
+    }
+
+    .timeline::before {
+        left: 1%;
+    }
+
+    .timeline div::before {
+        border: none;
+    }
+
+    .con {
+        width: 80%;
+        margin: 2% 10%;
+        padding: 0;
+    }
+}

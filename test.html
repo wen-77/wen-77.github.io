@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/click-scroll.js"></script>
+    <style>
+        nav#navigation {
+            left: 0;
+            top: 0;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100%;
+            position: fixed;
+            background-color: #fff;
+            overflow-y: hidden;
+        }
+
+        ul.menu {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            list-style: none;
+        }
+
+        ul.menu li {
+            outline: none;
+            margin-top: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #000;
+        }
+
+        ul.menu li a {
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        ul.menu li a:hover {
+            color: #fff;
+            background-color: red;
+        }
+
+        ul.menu li a:focus {
+            outline: none;
+        }
+
+        .active {
+            background-color: red;
+            color: #fff;
+        }
+
+        .inactive {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navigation">
+        <ul class="menu">
+            <li><a href="#section_1">Section 1</a></li>
+            <li><a href="#section_2">Section 2</a></li>
+            <li><a href="#section_3">Section 3</a></li>
+            <li><a href="#section_4">Section 4</a></li>
+            <li><a href="#section_5">Section 5</a></li>
+        </ul>
+    </nav>
+    <div id="section_1"></div>
+    <div id="section_2"></div>
+    <div id="section_3"></div>
+    <div id="section_4"></div>
+    <div id="section_5"></div>
+
+</body>
+
+</html>
