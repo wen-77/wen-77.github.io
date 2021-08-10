@@ -295,9 +295,7 @@ section {
 /* 製作中 */
 .loader {
     border: 16px solid #f3f3f3;
-    /* Light grey */
     border-top: 16px solid #3498db;
-    /* Blue */
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -324,12 +322,10 @@ section {
 }
 
 .con {
-    width: 40%;
-    height: 250px;
+    width: 42%;
+    /* height: 250px; */
     overflow: hidden;
-    padding: 1% 1rem;
     margin: 1% 0;
-    border: #f9bf3f 3px solid;
     cursor: pointer;
     position: relative;
 }
@@ -343,13 +339,25 @@ section {
     height: 0;
     transition: .5s ease;
     position: absolute;
-    background-color: #f9bf3f;
+    background-color: #2b24249c;
+    text-align: center;
 }
 
 .con:hover .overlay {
     bottom: 0;
     height: 100%;
     cursor: pointer;
+}
+
+.con .overlay h2 {
+    margin: 20% 0;
+    color: #ffffff;
+}
+
+.con .overlay a {
+    border: 1px #ffffff solid;
+    color: #ffffff;
+    padding: 10px;
 }
 
 /* Contact */
