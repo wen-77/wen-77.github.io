@@ -55,7 +55,6 @@ a {
 /* 左邊 */
 aside {
     background-color: #F2F3F7;
-    width: 20%;
     height: 100%;
     text-align: center;
     position: fixed;
@@ -115,7 +114,7 @@ nav a {
 
 /* 右邊 */
 .content {
-    width: 80%;
+    width: calc(100% - 300px);
     margin-left: 300px;
 }
 
